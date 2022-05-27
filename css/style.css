@@ -1,11 +1,8 @@
-body {
+body{
     margin: 0;
-    padding: 15px 20px;
-    min-height: 99%;
-    width: 100%;
-    min-width: 550px;
-    color: #66e55a;
-    background: #222524;
+    padding: 16px 32px;
+    background: #222222;
+    color: white;
     font-family: cursor, monospace;
     overflow-x: hidden;
 }
