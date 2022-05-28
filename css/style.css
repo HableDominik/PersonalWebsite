@@ -17,7 +17,7 @@ textarea{
     position: absolute;
 }
 
-.cursor {
+#cursor {
     margin-left: 1px;
     position: relative;
     opacity: 1;
