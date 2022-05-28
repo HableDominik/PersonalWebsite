@@ -6,7 +6,22 @@
         <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
         <!--link rel="icon" type="image/x-icon" href="img/icon.png" /-->
     </head>
-    <bdoy>
-        <p>visitor@dominikhable.com~$</p>
-    </bdoy>
+    <body>
+        <div id="command" onclick="$('text-area').focus();">
+            <textarea
+                type="text"
+                id="text-area"
+                onkeyup="typeIt(this, event)"
+                onkeydown="typeIt(this, event); 
+                           moveIt(this.value.length, event);"
+                onkeypress="typeIt(this, event);"
+                autofocus
+            ></textarea>
+            <div id="liner">
+                <span id="typer"></span><b class="cursor" id="cursor">▁</b>
+            </div>
+        </div>
+        <script src="js/main.js"></script>
+        <script src="js/magic.js"></script>
+    </body>
 </html>
