@@ -18,9 +18,9 @@ textarea{
 }
 
 .cursor {
+    margin-left: 1px;
     position: relative;
     opacity: 1;
-    width: 10px;
     transform: translateY(3px);
     overflow: hidden;
     text-indent: -4px;
