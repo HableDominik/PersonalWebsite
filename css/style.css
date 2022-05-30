@@ -1,5 +1,4 @@
 body{
-    margin: 0;
     padding: 16px 32px;
     background: #222522;
     color: white;
@@ -18,6 +17,7 @@ textarea{
 }
 
 #cursor {
+    margin-top: -4px;
     margin-left: 1px;
     position: relative;
     opacity: 1;
@@ -27,6 +27,13 @@ textarea{
     display: inline-block;
     animation: blinker 1s linear infinite;
 }
-@keyframes blinker {
-    50% { opacity: 0; }
+@keyframes blinker { 50% { opacity: 0; } }
+
+#current::before {
+    content: "visitor@dominikhable.com:~$";
+}
+
+p{
+    margin-top: 0px;
+    margin-bottom: 0px;
 }

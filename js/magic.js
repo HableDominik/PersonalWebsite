@@ -7,7 +7,6 @@ window.onload = init;
 
 function init() {
   cursor = $("cursor");
-  cursor.style.left = "0px";
 }
 
 function nl2br(txt) {
@@ -16,7 +15,7 @@ function nl2br(txt) {
 
 function typeIt(from, e) {
     e = e || window.event;
-    var w = $("typer");
+    var w = $("input-text");
     var tw = from.value;
     w.innerHTML = nl2br(tw);
 }
